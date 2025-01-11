@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            height: 90vh;
+        }
+        a{
+
+            transition: 0.2s;
+        }
+        nav a:hover:not(.navbar-brand){
+            color: rgb(40, 167, 69) !important;
+        }
+        li a{
+            position: relative;
+        }
+        nav .nav-link:before{
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color:rgba(40, 167, 69,0.8);
+            position: absolute;
+            bottom: 5px;
+            transition: 0.3s;
+        }
+        li:hover .nav-link:before{
+            width: 80%;
+        }
+        nav{
+            height: 10vh;
+        }
+        .nav-icons {
+            margin-left: 1rem;
+        }
+        .card{
+            transition: 0.5s;
+        }
+        .card:hover{
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media (max-width: 991px) {
+            .nav-icons {
+                margin-top: 1rem;
+            }
+            nav{
+            height: auto;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand me-5 mb-1 text-success fw-bold fs-2" href="#">Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fast Food</a></li>
+                            <li><a class="dropdown-item" href="#">Healthy Food</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" >
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="nav-icons d-flex align-items-center gap-3">
+                    <a href="#" class="text-success fs-5">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="text-success fs-5">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="position-relative hero overflow-hidden" id="Home">
+        <video class="position-absolute w-100 h-100 object-fit-cover" autoplay loop muted>
+            <source src="backvid.mp4" type="video/mp4">
+        </video>
+        <div class="position-absolute w-100 h-100 bg-success bg-opacity-25 d-flex justify-content-center align-items-center text-white">
+            <div class="p-3">
+                <h1 class="display-3 fw-bold">Delicious Food</h1>
+                <h1 class="display-3 fw-bold">Delivered Fast</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae<br>
+                    laboriosam dolor quae quidem recusandae cupiditate dolore esse at illum?</p>
+                <button class="btn btn-success btn-lg  px-4">Order <i  class="ms-2 fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section >
+        <div class="container border">
+            <h1 class="border h1 text-center my-5 fw-bold">Categories</h1>
+            <div class="row text-center gap-5 d-flex my-5 align-items-center justify-content-center">
+                
+                <div class="col-md-2 shadow p-3 rounded-4 ">
+                    <i class="fa-regular fa-burger-soda fs-1 mb-2 text-success"></i>
+                    <p class="mb-1 fw-bold">Fast Food</p>
+                    <p>40 itme</p>
+                </div>
+                <div class="col-md-2 shadow p-3 rounded-4 " >
+                    <i class="fa-regular fa-mug-hot fs-1 mb-2 text-success"></i>
+                    <p class="mb-1 fw-bold">Beverages</p>
+                    <p>40 itme</p>
+                </div>
+                <div class="col-md-2 shadow p-3 rounded-4   ">
+                    <i class="fa-regular fa-salad  fs-1 mb-2 text-success"></i>
+                    <p class="mb-1 fw-bold">Healthy Food</p>
+                    <p>40 itme</p>
+                </div>
+                <div class="col-md-2 shadow p-3 rounded-4">
+                    <i class="fa-sharp fa-regular fa-cupcake fs-1 mb-2 text-success"></i>
+                    <p class="mb-1 fw-bold">Desserts</p>
+                    <p>40 itme</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="container border">
+            <h1 class="border h1 text-center my-5 fw-bold">Featured Dishes</h1>
+            <div class="row gap-3 d-flex align-items-center justify-content-center my-5">
+
+                <div class="col-md-3">
+                    <div class="card ">
+                        <img src="images/buger.jpg" class="card-img-top" alt="food">
+                        <div class="card-body ">
+                          <h5 class="card-title">Burgeer</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$14.5</p>
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card ">
+                        <img src="images/cake.jpg" class="card-img-top" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Cake</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$10.5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card ">
+                        <img src="images/ice_cream.jpg" class="card-img-top" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Burgeer</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container mb-5 pb-5 border">
+            <h1 class="border h1 text-center my-5 fw-bold">Customers</h1>
+
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-5">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle me-2" src="images/review_4.png" alt="" style="width: 50px; height: 50px; object-fit: cover;">
+                            <div >
+                                <h6 class="mb-0 fw-bold">kamal wahman</h6>
+                                <div class="text-warning">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-thin fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-1 mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, unde?
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle me-2" src="images/review_1.png" alt="" style="width: 50px; height: 50px; object-fit: cover;">
+                            <div >
+                                <h6 class="mb-0 fw-bold">khadija wahman</h6>
+                                <div class="text-warning">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-1 mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, unde?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-success text-white bg-opacity-75 fw-bold fs-5">
+        <p class="mb-0">© 2024 Soufian. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
