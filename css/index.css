@@ -52,7 +52,7 @@ nav{
     box-shadow: 0 0 10px rgb(40, 167, 69,0.7);
     transition: 0.5s;
 } 
-#Customers .card:hover{
+#Dishes .card:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
