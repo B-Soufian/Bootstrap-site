@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand me-5 mb-1 text-success fw-bold fs-2" href="#">Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fast Food</a></li>
+                            <li><a class="dropdown-item" href="#">Healthy Food</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" >
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="nav-icons d-flex align-items-center gap-3">
+                    <a href="#" class="text-success fs-5">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="text-success fs-5">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Menu">
+        <div class="container">
+            <h1 class="pop h1 text-center my-5 fw-bold">Menu</h1>
+            <div class="sear pop">
+                <form class=" search " action="">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input  type="search" placeholder="Search">
+                        </div>
+                </form>
+                <select class="form-select">
+                    <option selected>Menu</option>
+                    <option value="1">Fast Food</option>
+                    <option value="2">Healthy</option>
+                    <option value="2">drinks</option>
+                </select>
+            </div>
+
+            <div class="row gap-4 d-flex align-items-center justify-content-center mt-5">
+                <div class="pop col-md-3">
+                    <div class="card ">
+                        <img src="images/buger.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body ">
+                          <h5 class="card-title">Burgeer</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$14.5</p>
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="pop col-md-3">
+                    <div class="card ">
+                        <img src="images/cake.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Cake</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$10.5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="pop col-md-3">
+                    <div class="card ">
+                        <img src="images/ice_cream.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Ice Cream</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/biryani.webp" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body ">
+                          <h5 class="card-title">Biryani</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$14.5</p>
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/chocolate.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Chocolate</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$10.5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/Hot_dog.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Dog</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/chocolate_Drink.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body ">
+                          <h5 class="card-title">Chocolate Drink</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$14.5</p>
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/juse.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Juse</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$10.5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/lasagna.webp" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Lasagna</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/pasta.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body ">
+                          <h5 class="card-title">Pasta</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$14.5</p>
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3">
+                    <div class="card ">
+                        <img src="images/pizza.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Pizza</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$10.5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/Spanchi.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Spanchi</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/sandwich.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Sandwich</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/gallary_3.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Sandwich</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/gallary_6.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Sandwich</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/gallary_5.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Sandwich</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/gallary_4.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Sandwich</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="shows col-md-3 ">
+                    <div class="card ">
+                        <img src="images/gallary_2.jpg" class="card-img-top object-fit-cover" alt="food">
+                        <div class="card-body">
+                          <h5 class="card-title">Sandwich</h5>
+                          <p class="card-text m-0">Lorem ipsum dolor sit amet.</p>
+                          <p class="card-text fw-bold text-success fs-4 mb-2">$5</p>
+
+                          <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="btn-toolbar d-flex justify-content-center">
+                <div class="btn-group m-4">
+                  <button type="button" class="btn btn-success">1</button>
+                  <button type="button" class="btn btn-success">2</button>
+                  <button type="button" class="btn btn-success">3</button>
+                  <button type="button" class="btn btn-success">4</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="text-center py-3 bg-success text-white fw-bold fs-5">
+        <p class="mb-0">© 2024 Soufian. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

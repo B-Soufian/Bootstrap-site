@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 90vh;
+}
+a{
+
+    transition: 0.2s;
+}
+nav a:hover:not(.navbar-brand){
+    color: rgb(40, 167, 69) !important;
+}
+li a{
+    position: relative;
+}
+nav .nav-link:before{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color:rgba(40, 167, 69,0.8);
+    position: absolute;
+    bottom: 5px;
+    transition: 0.3s;
+}
+li:hover .nav-link:before{
+    width: 80%;
+}
+nav{
+    height: 10vh;
+}
+.nav-icons {
+    margin-left: 1rem;
+}
+
+@media (max-width: 991px) {
+    .nav-icons {
+        margin-top: 1rem;
+    }
+    nav{
+        height: auto;
+    }
+}
+
+
+
+
+
+#Customers .card{
+    box-shadow: 0 0 10px rgb(40, 167, 69,0.7);
+    transition: 0.5s;
+} 
+#Customers .card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#Menu .card-img-top{
+    height: 200px;
+}
+#Menu .search input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 90%;
+}
+#Menu .search{
+    width: 60%;
+    margin: 0;
+}
+#Menu .sear{
+    display: flex;
+    gap: 0;
+    justify-content: center;
+}
+#Menu .form-select{
+    width: 10%;
+    margin: 0;
+}
+#Menu .search div{
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+#Menu .search input::placeholder{
+    font-size: 20px;
+    color: gray;
+}
+#Menu .search i{
+    font-size: 20px;
+    color: gray;
+    transition: 0.4s;
+}
+#Menu div:has(input:focus) i{
+    color: black !important;
+}
+#Menu .search input::-webkit-search-cancel-button{
+    filter: grayscale(1);
+}
+#Menu .card{
+    transition: 0.5s;
+    overflow: hidden;
+}
+#Menu .card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#Menu .card img{
+    transition: 0.5s;
+}
+#Menu .card:hover img{
+    scale: 1.1;
+}
+
+
+
+
+
+
+.pop{
+    animation: pop 0.4s linear;
+}
+@keyframes pop{
+    from{
+        scale: 0.4;
+        transform: translateY(10px);
+    }
+    to{
+        scale: 1;
+        transform: translateY(0px);
+    }
+}
+.left{
+    animation: left 0.4s linear;
+}
+@keyframes left{
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.right{
+    animation: right 0.4s linear;;
+}
+@keyframes right{
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}
+.shows{
+    animation:  show linear;
+    animation-timeline: view(100% 0%);
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+        scale: 0.5;
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+        scale: 1;
+    }
+}
